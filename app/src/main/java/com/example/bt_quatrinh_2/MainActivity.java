@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.EditText;
 
 import java.text.DateFormat;
 import java.util.ArrayList;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private NoteAdapter mAdapter;
     private ArrayList<note> noteArrayList;
+    int updated = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +40,15 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(mAdapter);
         mAdapter.notifyDataSetChanged();
 
+    }
+
+    public void update(){
+        Intent intent = getIntent();
+        updated = intent.getIntExtra("update", 0);
+        if (updated == 1){
+            noteArrayList.add(new note(intent.getStringExtra("titled"),intent.getStringExtra("contented"),"img"
+                    , DateFormat.getDateTimeInstance().format(new Date()),"0:00"));
+        }
     }
 
     @Override
