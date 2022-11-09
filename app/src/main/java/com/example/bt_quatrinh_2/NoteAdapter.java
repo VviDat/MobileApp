@@ -1,14 +1,20 @@
 package com.example.bt_quatrinh_2;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import org.w3c.dom.NodeList;
 
@@ -40,7 +46,15 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.MyViewHolder> 
         holder.layout.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
-
+               Intent intent = new Intent(context, NoteDetailActivity.class);
+               intent.putExtra("title_b", n.getName().toString());
+               intent.putExtra("content_b", n.getDescription().toString());
+               intent.putExtra("timer_b", n.getTimer().toString());
+               FirebaseDatabase database = FirebaseDatabase.getInstance();
+               DatabaseReference myRef = database.getReference("note");
+               myRef = myRef.child(n.getId());
+               myRef.removeValue();
+               context.startActivity(intent);
            }
         });
 

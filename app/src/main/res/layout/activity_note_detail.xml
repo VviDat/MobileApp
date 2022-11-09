@@ -23,17 +23,49 @@
         />
 
     <EditText
+        android:id="@+id/timer_a"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Time"
+        android:background="@color/white"
+        android:layout_margin="5dp"
+        android:textSize="16dp"
+        android:padding="10dp"
+        android:lines="2"
+        android:textColor="@color/black"
+        />
+
+    <EditText
         android:id="@+id/content_a"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="5dp"
-        android:layout_weight="9"
+        android:layout_weight="3"
         android:background="@color/white"
-        android:hint="Nội dung"
+        android:hint="Content"
         android:gravity="top"
         android:lines="19"
         android:padding="10dp"
         android:textColor="@color/black"
         android:textSize="14dp"
         />
+
+    <Button
+        android:id="@+id/btn_a"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@color/black"
+        android:text="ADD PICTURE"
+        android:layout_marginLeft="100dp"
+        />
+
+    <ImageView
+        android:id="@+id/anh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        />
+
 </LinearLayout>
