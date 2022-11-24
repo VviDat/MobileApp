@@ -9,11 +9,10 @@
     android:weightSum="10"
     android:background="@color/purple_500">
     <EditText
-        android:id="@+id/title_a"
+        android:id="@+id/title_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:hint="Name"
         android:background="@color/white"
         android:layout_margin="5dp"
         android:textSize="16dp"
@@ -23,11 +22,10 @@
         />
 
     <EditText
-        android:id="@+id/timer_a"
+        android:id="@+id/timer_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:hint="00:00"
         android:background="@color/white"
         android:layout_margin="5dp"
         android:textSize="16dp"
@@ -35,45 +33,18 @@
         android:lines="2"
         android:textColor="@color/black"
         />
-    <Button
-        android:id="@+id/btn_time"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:backgroundTint="@color/teal_200"
-        android:textColor="@color/black"
-        android:text="SET TIME"
-        android:layout_marginLeft="100dp"
-        />
+
     <EditText
-        android:id="@+id/content_a"
+        android:id="@+id/content_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="5dp"
         android:layout_weight="3"
         android:background="@color/white"
-        android:hint="Content"
         android:gravity="top"
         android:lines="19"
         android:padding="10dp"
         android:textColor="@color/black"
         android:textSize="14dp"
         />
-
-    <Button
-        android:id="@+id/btn_a"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:backgroundTint="@color/teal_200"
-        android:textColor="@color/black"
-        android:text="ADD PICTURE"
-        android:layout_marginLeft="100dp"
-        />
-
-    <ImageView
-        android:id="@+id/anh"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="5"
-        />
-
 </LinearLayout>

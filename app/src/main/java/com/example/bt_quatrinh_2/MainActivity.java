@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -33,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private NoteAdapter mAdapter;
     private ArrayList<note> noteArrayList;
+    AlarmManager alarmManager;
+    PendingIntent pendingIntent;
     FirebaseDatabase database ;
     DatabaseReference myRef ;
     @Override
@@ -40,7 +44,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initAll();
-
+        alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
+        Intent intent = new Intent(MainActivity.this, AlarmReceiver.class);
+        pendingIntent = PendingIntent.getBroadcast(this,0,intent,0);
     }
 
 
@@ -87,6 +93,8 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.save){
             Intent intent = new Intent(this, NoteDetailActivity.class);
+            intent.putExtra("gio",0);
+            intent.putExtra("phut",0);
             startActivity(intent);
         }
 
