@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+<!--        colum1-->
+        <TableLayout>
+            <TableRow>
+                <TextView
+                    android:id="@+id/tv111"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_margin="2dp"
+                    android:background="#57F402" />
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/tv222"
+                    android:layout_width="120dp"
+                    android:layout_height="260dp"
+                    android:layout_margin="2dp"
+                    android:background="#E4022F" />
+            </TableRow>
+        </TableLayout>
+
+<!--        colum2-->
+        <TableLayout>
+            <TableRow>
+                <TextView
+                    android:id="@+id/tv333"
+                    android:layout_width="232dp"
+                    android:layout_height="172dp"
+                    android:layout_margin="2dp"
+                    android:background="#02E4CA"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/tv444"
+                    android:layout_width="232dp"
+                    android:layout_height="172dp"
+                    android:layout_margin="2dp"
+                    android:background="#BB02E4" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/tv555"
+                    android:layout_width="232dp"
+                    android:layout_height="172dp"
+                    android:layout_margin="2dp"
+                    android:background="#02E495"
+                    />
+            </TableRow>
+        </TableLayout>
+    </TableRow>
+    <SeekBar
+        android:id="@+id/sliderChangeColor2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:background="#fff"
+        android:max="255"
+        >
+
+    </SeekBar>
+</TableLayout>

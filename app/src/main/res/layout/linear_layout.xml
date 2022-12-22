@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#000"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:background="#57F402"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:background="#E4022F"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="#000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:background="#02E4CA"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:background="#BB02E4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#02E495" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <SeekBar
+        android:layout_weight="1"
+        android:id="@+id/sliderChangeColor"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:max="255"
+        >
+
+    </SeekBar>
+</LinearLayout>
