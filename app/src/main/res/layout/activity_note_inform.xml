@@ -18,8 +18,7 @@
         android:textSize="16dp"
         android:padding="10dp"
         android:lines="2"
-        android:textColor="@color/black"
-        />
+        android:textColor="@color/black"/>
 
     <EditText
         android:id="@+id/timer_view"
@@ -31,8 +30,7 @@
         android:textSize="16dp"
         android:padding="10dp"
         android:lines="2"
-        android:textColor="@color/black"
-        />
+        android:textColor="@color/black"/>
 
     <EditText
         android:id="@+id/content_view"
@@ -45,6 +43,5 @@
         android:lines="19"
         android:padding="10dp"
         android:textColor="@color/black"
-        android:textSize="14dp"
-        />
+        android:textSize="14dp"/>
 </LinearLayout>

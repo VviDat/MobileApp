@@ -35,8 +35,6 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private NoteAdapter mAdapter;
     private ArrayList<note> noteArrayList;
-    AlarmManager alarmManager;
-    PendingIntent pendingIntent;
     FirebaseDatabase database ;
     DatabaseReference myRef ;
     @Override
@@ -44,12 +42,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initAll();
-        alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
-        Intent intent = new Intent(MainActivity.this, AlarmReceiver.class);
-        pendingIntent = PendingIntent.getBroadcast(this,0,intent,0);
     }
-
-
 
     private void initAll(){
         recyclerView = findViewById(R.id.list_note);
@@ -72,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
                     note n = post.getValue(note.class);
                     noteArrayList.add(n);
                 }
-
                 mAdapter.notifyDataSetChanged();
             }
 
@@ -103,6 +95,5 @@ public class MainActivity extends AppCompatActivity {
         }
         return true;
     }
-
 
 }

@@ -6,16 +6,14 @@ public class note {
     private String id;
     private String name;
     private String description;
-    private String img;
     private String date;
     private String timer;
 
 
-    public note(String id, String name, String description, String img, String date, String timer) {
+    public note(String id, String name, String description, String date, String timer) {
         this.id = id;
         this.name = name;
         this.description = description;
-        this.img = img;
         this.date = date;
         this.timer = timer;
     }
@@ -42,14 +40,6 @@ public class note {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public String getImg() {
-        return img;
-    }
-
-    public void setImg(String img) {
-        this.img = img;
     }
 
     public String getDate() {

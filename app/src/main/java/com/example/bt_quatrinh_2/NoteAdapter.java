@@ -50,17 +50,17 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.MyViewHolder> 
                intent.putExtra("title_b", n.getName().toString());
                intent.putExtra("content_b", n.getDescription().toString());
                intent.putExtra("timer_b", n.getTimer().toString());
+               context.startActivity(intent);
                FirebaseDatabase database = FirebaseDatabase.getInstance();
                DatabaseReference myRef = database.getReference("note");
                myRef = myRef.child(n.getId());
                myRef.removeValue();
-               context.startActivity(intent);
            }
         });
 
 
-    }
 
+}
     @Override
     public int getItemCount() {
         return noteList.size();

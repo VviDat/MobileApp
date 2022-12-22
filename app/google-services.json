@@ -1,41 +1,63 @@
 {
   "project_info": {
-    "project_number": "1085507364614",
-    "project_id": "btqt-2",
-    "storage_bucket": "btqt-2.appspot.com"
+    "project_number": "988572158002",
+    "firebase_url": "https://multinotes-db921-default-rtdb.firebaseio.com",
+    "project_id": "multinotes-db921",
+    "storage_bucket": "multinotes-db921.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1085507364614:android:6a344c80579bd4a415a087",
+        "mobilesdk_app_id": "1:988572158002:android:de5f0605a867baaa3ed42b",
         "android_client_info": {
           "package_name": "com.example.bt_quatrinh_2"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1085507364614-m7egnoo2gnvn102vr45o806t0lqij2af.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.bt_quatrinh_2",
-            "certificate_hash": "c446ac391eb620b9d0bfd4b3ca69dad0641569d5"
-          }
-        },
-        {
-          "client_id": "1085507364614-72iqkok00htcejjf9k1k83d4nhea5l15.apps.googleusercontent.com",
+          "client_id": "988572158002-01n7svefbsl2dgkdl9qnlbf8h932hf5c.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDI0SN1QxJVyLrd6HDtJwbZsfR-ldev1ps"
+          "current_key": "AIzaSyAmdmZN2eSPbV38XN6-S55NOW1cX9FFtDo"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1085507364614-72iqkok00htcejjf9k1k83d4nhea5l15.apps.googleusercontent.com",
+              "client_id": "988572158002-01n7svefbsl2dgkdl9qnlbf8h932hf5c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:988572158002:android:92b4856059c7e8653ed42b",
+        "android_client_info": {
+          "package_name": "com.example.multinotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "988572158002-01n7svefbsl2dgkdl9qnlbf8h932hf5c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmdmZN2eSPbV38XN6-S55NOW1cX9FFtDo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "988572158002-01n7svefbsl2dgkdl9qnlbf8h932hf5c.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
