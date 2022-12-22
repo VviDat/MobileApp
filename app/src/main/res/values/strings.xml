@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Know Your Government</string>
+    <string name="address_title">Address: </string>
+    <string name="phone_title">Phone: </string>
+    <string name="email_title">Email: </string>
+    <string name="website_title">Website: </string>
+    <string name="default_no_data">No Data Provided</string>
+
+</resources>

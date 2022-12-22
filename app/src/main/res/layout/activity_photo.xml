@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/photo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PhotoActivity">
+
+    <include
+        layout="@layout/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+    <LinearLayout
+        android:id="@+id/scrollLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8sp"
+        android:orientation="vertical">>
+
+        <TextView
+            android:id="@+id/chamberPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/politicianNamePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/avatarPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8sp"
+            android:layout_marginTop="16sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginBottom="16sp"
+            tools:srcCompat="@tools:sample/avatars" />
+    </LinearLayout>
+
+</LinearLayout>
